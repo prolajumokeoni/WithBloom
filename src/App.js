@@ -1,7 +1,8 @@
 import { Routes, Route} from 'react-router-dom';
 import Coins from './components/Coins';
 import ExchangeRate from './components/ExchangeRate';
-import { SignIn } from './components/SignIn';
+import SignIn from './components/auth/SignIn';
+import SignUp from './components/auth/SignUp';
 
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
     <Route path="/exchangerate" element={<ExchangeRate/>} />
     <Route path="/exchangerate" element={<ExchangeRate/>} />
     <Route path="/SignIn" element={<SignIn/>} />
-    <Route path="/Sign" element={<SignIn/>} />
+    <Route path="/SignUp" element={<SignUp/>} />
 </Routes>
   )
 }
