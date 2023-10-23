@@ -4,6 +4,7 @@ import {
   createUserDocumentFromAuth,
 } from "../../utils/firebase/firebase.utils";
 import FormInput from "./form-input";
+import { useNavigate } from "react-router-dom";
 
 const defaultFormFields = {
   displayName: "",
@@ -15,7 +16,7 @@ const defaultFormFields = {
 const SignUp = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
-
+  const navigate = useNavigate();
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
@@ -36,6 +37,7 @@ const SignUp = () => {
       );
       await createUserDocumentFromAuth(user, { displayName });
       resetFormFields();
+      navigate("/");
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
         alert("Email already in use");
@@ -54,7 +56,7 @@ const SignUp = () => {
   return (
     <div>
       <h1> SignUp</h1>
-      <form onClick={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <FormInput
           label="Display Name"
           type="text"

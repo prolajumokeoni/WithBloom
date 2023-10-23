@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { signInAuthWithEmailAndPassword } from "../../utils/firebase/firebase.utils";
+import { useNavigate } from "react-router-dom";
 import FormInput from "./form-input";
 
 const defaultFormFields = {
@@ -10,8 +11,8 @@ const defaultFormFields = {
 const SignIn = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
-   
-  // console.log(formFields);
+  const navigate = useNavigate();
+
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
   };
@@ -20,9 +21,9 @@ const SignIn = () => {
     event.preventDefault();
 
     try {
-       await signInAuthWithEmailAndPassword(email, password);
-
+      await signInAuthWithEmailAndPassword(email, password);
       resetFormFields();
+      navigate("/");
     } catch (error) {
       console.log("user not created encountered an error", error);
     }
@@ -37,7 +38,7 @@ const SignIn = () => {
   return (
     <div>
       <h1> SignIn</h1>
-      <form onClick={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <FormInput
           label="Email"
           type="email"
