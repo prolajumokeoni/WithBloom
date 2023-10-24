@@ -39,7 +39,7 @@ const SignUp = () => {
       );
       await createUserDocumentFromAuth(user, { displayName });
       resetFormFields();
-      navigate("/coins");
+      navigate("/");
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
         alert("Email already in use");
@@ -90,7 +90,7 @@ const SignUp = () => {
           />
 
           <FormInput
-            label="confirmPassword"
+            label="ConfirmPassword"
             type="password"
             name="confirmPassword"
             onChange={handleChange}

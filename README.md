@@ -39,21 +39,14 @@ WithBloom is an app that helps people discover new coins and their market rates.
 
 - **Auth pages** 
 - **Coins List** 
-- **CExchange Rate Calculator** 
+- **Exchange Rate Calculator** 
 
-
-  
-
-<p align="right"><a href="#readme-top">back to top</a></p>
- 
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Video <a name="video"></a>
 
-[video link](
-)
-
+[My App Walkthrough - Watch Video](https://www.loom.com/share/39c7136a004046ddbdab78243b6b7231)
 
 ## Deployed Link <a name="Live Demo"></a>
 
