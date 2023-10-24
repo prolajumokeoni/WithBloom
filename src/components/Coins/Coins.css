@@ -46,3 +46,8 @@
 .coin-rate {
   color: #007bff;
 }
+
+.load {
+	text-align: center;
+	font-size: 20px;
+}

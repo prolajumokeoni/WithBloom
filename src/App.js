@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
-import ExchangeRate from './components/Exchange/ExchangeRate';
 import SignIn from './components/SignIn.jsx/SignIn';
 import SignUp from './components/SignUp/SignUp';
 import Navigation from './components/navigation/navigation';
