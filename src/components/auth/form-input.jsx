@@ -1,6 +1,7 @@
+import './form-input.css'
 const FormInput = ({ label, ...otherProps }) => {
   return (
-    <div className=''>
+    <div className='form-wrapper'>
         <label>
           {label}
         </label>
