@@ -1,0 +1,42 @@
+
+.link-color {
+	color: #020032;
+}
+
+.bg-color {
+  min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	margin: 130px auto;
+	/* align-items: center; */
+	gap: 100px;
+}
+
+
+h2 {
+	padding: 0;
+	margin: 0;
+	color: #020032;
+	font-weight: 900;
+	font-size: 40px;
+}
+
+.form-inputs {
+	display: flex;
+	flex-flow: column;
+	gap: 40px;
+	align-items: center;
+	color: #020032;
+
+}
+
+.register-text {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.account {
+	color: #020032;
+	font-size: 20px;
+}

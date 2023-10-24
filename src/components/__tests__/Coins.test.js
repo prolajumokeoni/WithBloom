@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import Coins from '../../components/Coins';
+import Coins from '../Coins/Coins';
 
 test('displays loading message and then coin rates', async () => {
   const mockData = {

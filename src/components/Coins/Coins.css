@@ -1,0 +1,48 @@
+/* coins.css */
+
+.coins-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  /* background-color: #f4f4f4; */
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.coins-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+	color: #020032;
+}
+
+.coin-search {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.coin-list {
+  list-style: none;
+  padding: 0;
+}
+
+.coin-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.coin-name {
+  font-weight: 600;
+}
+
+.coin-rate {
+  color: #007bff;
+}

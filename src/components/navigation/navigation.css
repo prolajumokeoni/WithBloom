@@ -1,0 +1,55 @@
+.logo {
+  font-size: 50px;
+  color: #fff;
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover if needed */
+}
+
+.logo-text {
+font-size: 20px;
+color: #fff;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header-wrapper {
+  background-color: #020032;
+  
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.auth-text {
+  color: #020032; 
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
