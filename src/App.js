@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
-import Coins from './components/Coins';
 import ExchangeRate from './components/ExchangeRate';
 import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
 import Navigation from './components/navigation';
 import { UserContext } from './contexts/user.context'; 
+import Coins from './components/Coins';
 
 const App = () => {
   const { isAuthenticated } = useContext(UserContext);
