@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { signInAuthWithEmailAndPassword } from "../../utils/firebase/firebase.utils";
 import { useNavigate } from "react-router-dom";
-import FormInput from "./form-input";
+import FormInput from "../auth/form-input";
+import { Link } from "react-router-dom";
 
 const defaultFormFields = {
   email: "",
@@ -36,9 +37,12 @@ const SignIn = () => {
   };
 
   return (
+    <div className="bg-color">
     <div>
-      <h1> SignIn</h1>
-      <form onSubmit={handleSubmit}>
+      <h1> Sign In</h1>
+    </div>
+    <div>
+      <form className="form-inputs" onSubmit={handleSubmit}>
         <FormInput
           label="Email"
           type="email"
@@ -59,6 +63,16 @@ const SignIn = () => {
 
         <button type="submit"> Sign In</button>
       </form>
+      
+      <div className="register-text">
+          <p className="account">Do you already have an account?</p>
+          <Link className="link-color" to="/signup">
+            {" "}
+            Sign Up
+          </Link>
+        </div>
+    </div>
+
     </div>
   );
 };
